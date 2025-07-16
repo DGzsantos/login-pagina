@@ -1,0 +1,118 @@
+body{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: url('./img.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.container{
+    flex-direction: column;
+    height: 400px;
+    width: 350px;
+    display: flex;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 10px;
+    color: white;
+    backdrop-filter: blur(5px);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.container h1{
+    font-size: 36px;
+    text-align: center;
+}
+.input-name{
+    position: relative;
+    height: 50px;
+    margin-left: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: auto;
+}
+.input-password{
+    position: relative;
+    height: 50px;
+    margin-left: 30px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    width: auto;
+}
+input{
+    width: 80%;
+    padding-left: 30px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    height: 30px;
+    color: white;
+    border: solid rgba(255, 255, 255, .2);
+    border-radius: 20px;
+}
+input::placeholder{
+    color: rgb(172, 172, 172);
+}
+.input-name label{
+    position: absolute;
+    bottom: 60px;
+}
+.input-password label{
+    position: absolute;
+    bottom: 60px;
+}
+.input-name::before{
+    position: absolute;
+    content: '';
+    background-image: url('./imguser.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+    left: 5px;
+    top: 11%;
+}
+.input-password::before{
+    position: absolute;
+    content: '';
+    background-image: url('./imgpassword.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+    left: 5px;
+    top: 11%;
+}
+.buttons{
+    display: flex;
+    justify-content: space-around;
+}
+.buttons button{
+    font-family: "Poppins", sans-serif;
+    background-color: white;
+    color: #333;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border: none;
+    font-size: 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 30%;
+    height: 40px;
+}
+.buttons button:hover{
+    background-color: transparent;
+    color: white;
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+@media(max-width: 450px){
+    .container{
+
+        width: 100%;
+    }
+}
